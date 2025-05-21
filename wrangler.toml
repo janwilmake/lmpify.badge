@@ -2,8 +2,10 @@ name = "lmpify_badge"
 main = "README.ts"
 compatibility_date = "2025-05-21"
 
-route.pattern = "badge.lmpify.com"
-route.custom_domain = true
 
+routes = [
+  { pattern = "badge.lmpify.com", custom_domain = true },
+  { pattern = "b.lmpify.com", custom_domain = true }
+]
 [dev]
 port = 3000
