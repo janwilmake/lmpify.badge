@@ -1,5 +1,5 @@
 name = "lmpify_badge"
-main = "main.ts"
+main = "README.ts"
 compatibility_date = "2025-05-21"
 
 route.pattern = "badge.lmpify.com"

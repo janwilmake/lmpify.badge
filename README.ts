@@ -21,15 +21,16 @@ export default {
     }
 
     const url = new URL(request.url);
-    const title = url.searchParams.get("title") || "Prompt It";
-
+    const title = "Prompt It";
+    const headline = url.pathname.slice(1) || "LMPIFY";
     try {
       // Get the badge response
 
-      const badgeUrl = `https://img.shields.io/badge/💡_LMPIFY-${title.replaceAll(
+      const badgeUrl = `https://img.shields.io/badge/💡_${headline.replaceAll(
         " ",
         "_",
-      )}_➡️-orange`;
+      )}-${title.replaceAll(" ", "_")}_➡️-orange`;
+
       const badgeResponse = await fetch(badgeUrl);
 
       if (!badgeResponse.ok) {
