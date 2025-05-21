@@ -1,0 +1,9 @@
+name = "lmpify_badge"
+main = "main.ts"
+compatibility_date = "2025-05-21"
+
+route.pattern = "badge.lmpify.com"
+route.custom_domain = true
+
+[dev]
+port = 3000
